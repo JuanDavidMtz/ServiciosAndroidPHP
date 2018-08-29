@@ -24,7 +24,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnIngresar;
     EditText txtUsu,txtPas;
     @Override
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         txtPas=(EditText)findViewById(R.id.txtpas);
         btnIngresar=(Button)findViewById(R.id.btnIngresar);
 
-        btnIngresar.setOnClickListener((View.OnClickListener) this);
+        btnIngresar.setOnClickListener( this);
     }
     public void onClick(View v) {
 
